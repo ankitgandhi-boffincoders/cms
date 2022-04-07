@@ -10,7 +10,6 @@ import { strategy } from "./api/v1/common/config/passport.config";
 import { generate_salary_slip_cron_job } from "./api/v1/common/cronJob/generate_salary_slip_cron_job";
 import Routes from "./api/v1/routes";
 dotenv.config();
-
 const app = express();
 app.use(fileUpload({ useTempFiles: true }));
 app.use(express.json());
